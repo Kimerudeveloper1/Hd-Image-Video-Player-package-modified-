@@ -317,9 +317,9 @@ local ImageJob = function(item, ctx, fn)
 
         local paths = {
             {from = {x=0.0,  y=0.0,  s=1.0}, to = {x=0.0, y=0.08, s=0.9 }},
-            {from = {x=0.0, y=0.08,  s=0.9}, to = {x=0.08, y=0.08, s=0.1}},
-            {from = {x=0.08, y=0.08, s=0.1}, to = {x=0.08, y=0.00, s=0.9}},
-            {from = {x=0.08, y=0.00, s=0.9}, to = {x=0.0,  y=0.0,  s=1.0 }},
+            {from = {x=0.0, y=0.08,  s=1.0}, to = {x=0.08, y=0.08, s=0.9}},
+            {from = {x=0.08, y=0.08, s=1.0}, to = {x=0.08, y=0.00, s=0.9}},
+            {from = {x=0.08, y=0.00, s=1.0}, to = {x=0.0,  y=0.0,  s=0.9 }},
         }
 
         local path = paths[math.random(1, #paths)]
