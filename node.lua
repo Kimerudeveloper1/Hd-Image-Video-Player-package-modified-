@@ -316,11 +316,22 @@ local ImageJob = function(item, ctx, fn)
         end
 
         local paths = {
+                {from = {x=0.0, y=0.0, s=1.0}, to = {x=0.0, y=0.0, s=0.90}},
+				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.05, y=0.05, s=0.90}},
+				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.1, y=0.0, s=0.90}},
+				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.0, y=0.1, s=0.90}},
+            }
+		
+		local rotation, portrait = Config.get_rotation()
+
+		if portrait == true then
+			paths = {
                 {from = {x=0.0, y=0.0, s=1.0}, to = {x=0.0, y=0.0, s=0.95}},
 				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.025, y=0.025, s=0.95}},
 				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.05, y=0.0, s=0.95}},
 				{from = {x=0.0, y=0.0, s=1.0}, to = {x=0.0, y=0.05, s=0.95}},
             }
+		end
 
         local path = paths[math.random(1, #paths)]
 
