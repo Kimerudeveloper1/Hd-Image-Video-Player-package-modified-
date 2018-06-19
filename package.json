@@ -5,6 +5,6 @@
     "repository": "https://github.com/tioma18/hdImageVideo",
 	"version": "0.3",
 	"runtime": {
-		"antialias": true,
+		"antialias": true
 	}
 }
