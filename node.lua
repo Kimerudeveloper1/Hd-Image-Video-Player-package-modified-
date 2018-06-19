@@ -9,7 +9,7 @@ local shaders = {
         uniform vec4 Color;
         uniform float x, y, s;
         void main() {
-            vec2 texcoord = TexCoord  vec2(s, s) + vec2(x, y);
+            vec2 texcoord = TexCoord * vec2(s, s) + vec2(x, y);
             vec4 c1 = texture2D(Texture, texcoord);
             vec4 c2 = texture2D(Texture, texcoord + vec2(0.0008, 0.0000));
             vec4 c3 = texture2D(Texture, texcoord + vec2(0.0004, 0.0004));
