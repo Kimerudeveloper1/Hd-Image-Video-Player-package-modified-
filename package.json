@@ -3,6 +3,7 @@
     "author": "Florian Wesch <fw@info-beamer.com>",
     "desc": "Displays images and videos in a rotation",
     "repository": "https://github.com/tioma18/hdImageVideo",
+	"version": "0.3",
 	"runtime": {
 		"antialias": true,
 	}
