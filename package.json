@@ -2,5 +2,8 @@
     "name": "HD Image/Video Player (modified)",
     "author": "Florian Wesch <fw@info-beamer.com>",
     "desc": "Displays images and videos in a rotation",
-    "repository": "https://github.com/tioma18/hdImageVideo"
+    "repository": "https://github.com/tioma18/hdImageVideo",
+	"runtime": {
+		"antialias": true,
+	}
 }
